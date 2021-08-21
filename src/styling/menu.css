@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.menu {
+		font-family: 'Lobster', cursive;
+		color: white;
+		font-size: 3vw;
+		font-weight: bold;
+		float: left;
+		top: 85vh;
+		right: 70vw;
+		position: absolute;
+/*FIX MEEEEE*/
+		text-shadow: 1px 1px 2px black;
+}
+
+.menuAbout {
+		font-family: 'Lobster', cursive;
+		color: white;
+		font-size: 3vw;
+		font-weight: bold;
+		float: left;
+		top: 85vh;
+		right: 55vw;
+		position: absolute;
+/*FIX MEEEEE*/
+		text-shadow: 1px 1px 2px black;
+}
+
+.menuResume {
+		font-family: 'Lobster', cursive;
+		color: white;
+		font-size: 3vw;
+		font-weight: bold;
+		float: left;
+		top: 85vh;
+		right: 37vw;
+		position: absolute;
+/*FIX MEEEEE*/
+		text-shadow: 1px 1px 2px black;
+}
+
+.menuLinks {
+		font-family: 'Lobster', cursive;
+		color: white;
+		font-size: 3vw;
+		font-weight: bold;
+		float: left;
+		top: 85vh;
+		right: 22vw;
+		position: absolute;
+/*FIX MEEEEE*/
+		text-shadow: 1px 1px 2px black;
+}
+
+.menuShade {
+		font-family: 'Lobster', cursive;
+		font-size: 3vw;
+		font-weight: bold;
+		position: absolute;
+		margin: 0;
+}
+
+#shadowContainer {
+	position: absolute;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}

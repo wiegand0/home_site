@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.title {
+		font-family: 'Lobster', cursive;
+		font-size: 5vw;
+		font-weight: bold;
+		float: left;
+		position: absolute;
+		text-shadow: 1px 1px 2px black;
+		color: rgb(255,255,255);
+}
+
+.titleShade {
+		font-family: 'Lobster', cursive;
+		font-size: 5vw;
+		font-weight: bold;
+		float: left;
+		position: absolute;
+		margin: 0;
+}
+
+#shadowContainer {
+	position: absolute;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
