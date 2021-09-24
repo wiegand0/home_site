@@ -4,16 +4,19 @@ import './index.css';
 import Title from './components/Title';
 import Menu from './components/Menu';
 import reportWebVitals from './reportWebVitals';
+import Content from './components/Content';
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Title />
-    <Menu />
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <Title />
+      <Menu />
+      <Content />
+    </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

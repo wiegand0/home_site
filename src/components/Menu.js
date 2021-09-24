@@ -1,37 +1,36 @@
 import React from "react";
 import {customOffset} from './Utils.js';
 import '../styling/menu.css';
+import { Link } from 'react-router-dom';
 
 
 export class Menu extends React.Component {
-	constructor(props) {
-		super(props);
-
-	}
 
 	render() {
 		let rgbOff = [5,5,5];
 		let rgbAc = [0,0,0];
-		let snekContent = customOffset(.5, 70, 85, 40, "Book Snek", "menuShade", rgbAc, rgbOff);
-		let aboutContent = customOffset(.5, 55, 85, 40, "About", "menuShade", rgbAc, rgbOff);
 
-		let resumeContent = customOffset(.5, 37, 85, 40, "Resume", "menuShade", rgbAc, rgbOff);
-		let linksContent = customOffset(.5, 22, 85, 40, "Links", "menuShade", rgbAc, rgbOff);
+		let snekContent = customOffset(.5, 82, 40, 40, "Book Snek", "menuShade", rgbAc, rgbOff);
+		let aboutContent = customOffset(.5, 80, 48, 40, "About", "menuShade", rgbAc, rgbOff);
+		let resumeContent = customOffset(.5, 84, 56, 40, "Resume", "menuShade", rgbAc, rgbOff);
+		let linksContent = customOffset(.5, 82, 64, 40, "Links", "menuShade", rgbAc, rgbOff);
 
 		return (<div> 
 
-				<div id = 'shadowContainer'><div dangerouslySetInnerHTML={{__html: snekContent}}></div></div>
-				<div class = 'menu'>Book Snek</div>
+				<div id = 'shadowContainer'>
+					<div dangerouslySetInnerHTML={{__html: snekContent}}></div>
+					<div dangerouslySetInnerHTML={{__html: aboutContent}}></div>
+					<div dangerouslySetInnerHTML={{__html: resumeContent}}></div>
+					<div dangerouslySetInnerHTML={{__html: linksContent}}></div>
+				</div>
 
+				<Link to="/snake" class = 'menu Book'>Book Snek</Link>
 
-				<div id = 'shadowContainer'><div dangerouslySetInnerHTML={{__html: aboutContent}}></div></div>
-				<div class = 'menuAbout'>About</div>
+				<Link to="/about" class = 'menu About'>About</Link>
 
-				<div id = 'shadowContainer'><div dangerouslySetInnerHTML={{__html: resumeContent}}></div></div>
-				<div class = 'menuResume'>Resume</div>
+				<Link to="/resume" class = 'menu Resume'>Resume</Link>
 
-				<div id = 'shadowContainer'><div dangerouslySetInnerHTML={{__html: linksContent}}></div></div>
-				<div class = 'menuLinks'>Links</div>
+				<Link to="/links" class = 'menu Links'>Links</Link>
 
 			</div>)
 	}

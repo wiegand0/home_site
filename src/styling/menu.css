@@ -1,62 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 .menu {
-		font-family: 'Lobster', cursive;
+	font-family: 'Righteous', cursive;
 		color: white;
 		font-size: 3vw;
 		font-weight: bold;
 		float: left;
-		top: 85vh;
-		right: 70vw;
 		position: absolute;
+		text-decoration: none;
 /*FIX MEEEEE*/
 		text-shadow: 1px 1px 2px black;
 }
 
-.menuAbout {
-		font-family: 'Lobster', cursive;
-		color: white;
-		font-size: 3vw;
-		font-weight: bold;
-		float: left;
-		top: 85vh;
-		right: 55vw;
-		position: absolute;
-/*FIX MEEEEE*/
-		text-shadow: 1px 1px 2px black;
+.menu:hover {
+	color: gray;
+	transform: translate(-.5vw,.5vh);
 }
 
-.menuResume {
-		font-family: 'Lobster', cursive;
-		color: white;
-		font-size: 3vw;
-		font-weight: bold;
-		float: left;
-		top: 85vh;
-		right: 37vw;
-		position: absolute;
-/*FIX MEEEEE*/
-		text-shadow: 1px 1px 2px black;
+.Book {
+		
+		top: 40vh;
+		right: 82vw;
 }
 
-.menuLinks {
-		font-family: 'Lobster', cursive;
-		color: white;
-		font-size: 3vw;
-		font-weight: bold;
-		float: left;
-		top: 85vh;
-		right: 22vw;
-		position: absolute;
-/*FIX MEEEEE*/
-		text-shadow: 1px 1px 2px black;
+.About {
+		top: 48vh;
+		right: 80vw;
+}
+
+.Resume {
+		top: 56vh;
+		right: 84vw;
+}
+
+.Links {
+		top: 64vh;
+		right: 82vw;
 }
 
 .menuShade {
-		font-family: 'Lobster', cursive;
+		font-family: 'Righteous', cursive;
 		font-size: 3vw;
 		font-weight: bold;
 		position: absolute;
+		white-space: nowrap;
 		margin: 0;
 }
 
